@@ -72,7 +72,7 @@ void sum3SlidigElements(int array[10], int size)
     }
 }
 
-void smallestSubArraySum(int array[], int size)
+void smallestSubArraySum(int array[10], int size)
 {
     int windowSum = 0;       // sum of current window
     int minLength = INT_MAX; // store smallest length found
