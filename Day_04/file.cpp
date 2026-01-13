@@ -9,7 +9,7 @@ int main()
     int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
     int size = sizeof(arr) / sizeof(arr[0]);
     // sum3Elements(arr, size);
-    sum3SlidigElements(arr, size);
+   // sum3SlidigElements(arr, size);
 
     return 0;
 }
@@ -51,7 +51,22 @@ void sum3SlidigElements(int array[10], int size)
     //     cout << "Sum of " << setNo << " set of 3 numbers is " << sum << endl;
     //     setNo++;
     // }
-   
-    //Method 2 
-    
+
+    // Method 2
+    int sum = 0, setNo = 1, counter = 0;
+    for (int i = 0; i < size; i++)
+    {
+        sum = sum + array[i];
+        counter++;
+        if (counter == 3)
+        {
+            cout << "Sum of " << setNo << " set of 3 numbers is " << sum << endl;
+            counter = 0;
+            sum = 0;
+            setNo++;
+            i = i-2;
+        }
+    }
 }
+
+
