@@ -16,7 +16,7 @@ int main()
 
     return 0;
 }
-
+ 
 void sum3Elements(int array[10], int size)
 {
     // Method #01
