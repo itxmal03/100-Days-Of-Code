@@ -13,11 +13,13 @@ void equalSubArr(int array[], int size, int target);
 
 int main()
 {
-    int array[5] = {1, 2, 4, 6, 0};
+    int array[5] = {1, 2, 4, 6, 9};
     int size = sizeof(array) / sizeof(array[0]);
-    smallestSubArr(array, size, 11);
+    // smallestSubArr(array, size, 11);
     cout << endl;
-    largestSubArr(array, size, 17);
+    // largestSubArr(array, size, 17);
+    equalSubArr(array, size, 5);
+    cout << endl;
 
     return 0;
 }
@@ -82,8 +84,26 @@ void equalSubArr(int array[], int size, int target)
     int sum = 0;
     int maxLength = 0;
 
-    for (int i = 0; i < size; i++)
+    int startIndex = 0;
+    for (int currentIndex = 0; currentIndex < size; currentIndex++)
     {
-       
+        sum = sum + array[currentIndex];
+        while (sum > target)
+        {
+            sum = sum - array[startIndex];
+            startIndex++;
+        }
+        if (sum == target)
+        {
+            maxLength = max(maxLength, currentIndex - startIndex + 1);
+        }
+    }
+    if (maxLength == 0)
+    {
+        cout << "No subarray found";
+    }
+    else
+    {
+        cout << "The max length of subarray whose sum is equal to: " << target << " is: " << maxLength << endl;
     }
 }
