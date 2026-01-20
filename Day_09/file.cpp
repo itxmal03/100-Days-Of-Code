@@ -22,7 +22,7 @@ int main()
         for (int y = 0; y < 3; y++)
         {
             tempArray[k++] = matrix[x][y];
-        }
+        } 
     }
 
     //  Sort the array using insertion sort
