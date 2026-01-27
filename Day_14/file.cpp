@@ -67,21 +67,40 @@ void waveArray(int array[8])
     cout << "Original array!" << endl;
     for (int a = 0; a < 8; a++)
     {
-        cout << array[a]<<" ";
+        cout << array[a] << " ";
     }
 
-    for (int i = 1; i < 8; i = i + 2)
+    // Method 1
+    //  for (int i = 1; i < 7; i = i + 2)
+    //  {
+    //      if (array[i] < array[i - 1] && array[i] < array[i + 1])
+    //      {
+    //          swap(array[i], array[i + 1]);
+    //      }
+    //  }
+
+    // Method 2
+    // sort array
+    for (int m = 0; m < 8; m++)
     {
-        if (array[i] < array[i - 1])
+        int x = m;
+        while (x > 0 && array[x] < array[x - 1])
         {
-            swap(array[i], array[i - 1]);
+            swap(array[x], array[x - 1]);
+            x--;
         }
+    }
+
+    // swap each pair
+    for (int n = 0; n < 7; n=n+2)
+    {
+        swap(array[n], array[n + 1]);
     }
 
     cout << "\nArranged array in wave form!" << endl;
     for (int a = 0; a < 8; a++)
     {
-        cout << array[a]<<" ";
+        cout << array[a] << " ";
     }
-    cout<<endl;
+    cout << endl;
 }
