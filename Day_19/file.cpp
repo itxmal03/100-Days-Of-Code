@@ -14,7 +14,7 @@ void checkPrime(int n)
     bool isPrime = true;
     for (int i = 2; i * i <= n; i++)
     {
-        if (i % 2 == 0)
+        if (n % i == 0)
         {
             isPrime = false;
             break;
