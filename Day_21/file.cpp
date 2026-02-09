@@ -5,7 +5,7 @@ void twosComplement(int n);
 
 int main()
 {
-    twosComplement(101);
+    twosComplement(-101);
     return 0;
 }
 
@@ -15,20 +15,23 @@ void twosComplement(int n)
     // one's complement
     if (s[0] == '-')
     {
-        s[0] = 0;
+        s[0] = '0';
     }
     for (int i = 0; i < s.length(); i++)
     {
-        if (s[i] == 0)
+        if (s[i] == '0')
         {
-            s[i] = 1;
+            s[i] = '1';
         }
         else
         {
-            s[i] = 0;
+            s[i] = '0';
         }
-        
     }
     cout << s << endl;
     cout << "oringinal number: " << n << " fliped number: " << s << endl;
+
+    // two's complement
+    
+    
 }
