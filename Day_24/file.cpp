@@ -5,18 +5,20 @@ void intersection(int arr1[], int arr2[])
 {
     for (int i = 0; i < 4; i++)
     {
+        bool isCommon = false;
         for (int j = 0; j < 3; j++)
         {
             if (arr1[i] == arr2[j])
             {
-                arr1[i] = 0;
+                isCommon = true;
+                break;
             }
         }
+        if (!isCommon)
+            arr1[i] = 0;
     }
-
-    // move 0 to end
-
-    for (int i = 4; i > 1; i--)
+    // descending sorting 
+    for (int i = 0; i < 4; i++)
     {
         int x = i;
         while (x > 0 && arr1[x] > arr1[x - 1])
@@ -32,7 +34,6 @@ void intersection(int arr1[], int arr2[])
     }
     cout << endl;
 }
-
 int main()
 {
     int array1[4] = {2, 4, 5, 6};
