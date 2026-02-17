@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+void printSubArrays(int array[], int size);
+
+int main()
+{
+    int arr[5] = {1, 2, 3, 4, 5};
+    printSubArrays(arr, 5);
+    return 0;
+}
+
+void printSubArrays(int array[], int size)
+{
+    for (int start = 0; start < size; start++)
+    {
+        for (int end = start; end < size; end++)
+        {
+            for (int i = start; i <= end; i++)
+            {
+                cout << array[i];
+            }
+            cout << " ";
+        }
+        cout << endl;
+    }
+}
