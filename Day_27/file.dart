@@ -6,6 +6,7 @@ void main() {
 }
 
 int kadanesAlgorithm(List<int> array) {
+  if (array.isEmpty) return 0;
   int maxSum = array[0];
   int currentSum = 0;
 
