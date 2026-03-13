@@ -5,7 +5,7 @@ class Appliance
 {
 private:
     string applianceName;
-    int appliancePower;
+    int appliancePower;    
     bool applianceStatus;
 
 public:
