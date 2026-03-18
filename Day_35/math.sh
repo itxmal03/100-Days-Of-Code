@@ -53,6 +53,13 @@
 # echo $a 
 
 
+c=5
+f=3
+
+div=$(echo "scale=2; $c / $f" |bc -l)
+
+echo $div
+
 
 
 
