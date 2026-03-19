@@ -141,4 +141,4 @@
 # } 
 
 # read -p "Enter to check even or odd : " num 
-# check_even num
+# check_even $num
