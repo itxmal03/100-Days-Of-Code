@@ -1,0 +1,32 @@
+sending incremental file list
+created directory ../a/current
+Day_38/
+Day_38/Day_38_README.md
+Day_38/case_loop.sh
+Day_38/log_results.log
+Day_38/schedule_job.sh
+
+sent 208 bytes  received 67 bytes  550.00 bytes/sec
+total size is 6,100  speedup is 22.18 (DRY RUN)
+sending incremental file list
+created directory ../a/current
+Day_38/
+Day_38/Day_38_README.md
+Day_38/case_loop.sh
+Day_38/log_results.log
+Day_38/schedule_job.sh
+
+sent 6,468 bytes  received 131 bytes  4,399.33 bytes/sec
+total size is 6,100  speedup is 0.92
+sending incremental file list
+Day_38/
+Day_38/sdf
+
+sent 253 bytes  received 39 bytes  584.00 bytes/sec
+total size is 6,100  speedup is 20.89
+sending incremental file list
+deleting Day_38/sdf
+Day_38/
+
+sent 191 bytes  received 30 bytes  442.00 bytes/sec
+total size is 6,100  speedup is 27.60

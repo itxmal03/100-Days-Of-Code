@@ -1,0 +1,14 @@
+command 1
+command 2
+total 27K
+drwxrwxrwx 1 root root 4.0K Mar 22 20:20 .
+drwxrwxrwx 1 root root 8.0K Mar 22 15:10 ..
+-rwxrwxrwx 1 root root  408 Mar 22 00:36 arguments.sh
+-rwxrwxrwx 1 root root  803 Mar 22 15:09 backup_2026-03-22.log
+-rwxrwxrwx 1 root root  689 Mar 22 17:03 backup_script.sh
+-rwxrwxrwx 1 root root  145 Mar 22 20:20 brackets.sh
+-rwxrwxrwx 1 root root  494 Mar 22 17:43 cd_function.sh
+-rwxrwxrwx 1 root root    0 Mar 22 18:06 Day_39_README.md
+-rwxrwxrwx 1 root root  542 Mar 22 18:11 extract_script.sh
+-rwxrwxrwx 1 root root   20 Mar 22 20:20 output.txt
+-rwxrwxrwx 1 root root 1.2K Mar 22 19:16 zip_script.sh

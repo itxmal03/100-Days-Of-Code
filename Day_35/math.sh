@@ -1,3 +1,4 @@
+#!/bin/bash
 # mathematical operations in bash  
 # a=16
 # b=10
@@ -39,7 +40,7 @@
 
 # a=$(echo "sqrt(9)" | bc -l)
 # echo "$a"
-#!/bin/bash
+
 
 # a=9           # Bash variable
 # b=$(echo "sqrt($a)" | bc -l)  # Use bc to calculate
