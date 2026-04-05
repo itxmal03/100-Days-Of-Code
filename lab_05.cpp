@@ -35,6 +35,7 @@ void Employee::setEmName(string fName, string lName)
     emLastName = lName;
 }
 
+
 string Employee::getFirstName()
 {
     return emFirstName;
@@ -192,7 +193,3 @@ int main()
 
     return 0;
 }
-
-
-
-
