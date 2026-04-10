@@ -17,6 +17,7 @@ public:
 };
 
 Employee::Employee()
+
 {
     this->firstName = "";
     this->lastName = "";
