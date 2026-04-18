@@ -10,6 +10,7 @@ void main() {
   speed2 = double.parse(stdin.readLineSync()!);
   stdout.write("Enter distance btw persons in meters: ");
   distance = double.parse(stdin.readLineSync()!);
+
   do {
     stdout.write(
       "Enter 1 if they are moving towards each other & 2 if moving apart: ",
@@ -20,6 +21,9 @@ void main() {
       continue;
     }
   } while (direction != 1 && direction != 2);
+
+
+
 
   if (direction == 1) {
     relativeSpeed = speed1 + speed2;

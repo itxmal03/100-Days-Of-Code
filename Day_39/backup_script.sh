@@ -15,7 +15,7 @@ if ! command -v rsync > /dev/null 2>&1
 then
     echo "This script requires rsync to run. Install it and then try!!!"
     exit 2
-fi
+fi 
 
 #capture date and store it in this format YYYY-MM-DD 
 current_date=$(date +%Y-%m-%d)
