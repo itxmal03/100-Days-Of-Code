@@ -12,7 +12,7 @@ int main()
         if (str[i] == ' ' || i == str.length())
         {
             for (int j = i - 1; j >= end; j--)
-            {
+            {  
                 tempStr += str[j];
             }
             tempStr += " ";
