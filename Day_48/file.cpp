@@ -3,54 +3,53 @@ using namespace std;
 
 class Student
 {
-public:
+private:
     string name;
-    double *cgpa;
-    int roll;
+    float cgpa;
 
-    Student(string n, double c)
+    float *pointerCgpa;
+
+public:
+    // Student(string n, float c)
+    // {
+    //     this->name = n;
+    //     this->cgpa = c;
+    // }
+
+    Student(string n, float &c)
     {
         this->name = n;
-        (*this).cgpa = new double;
-        *cgpa = c;
+        *pointerCgpa = c;
     }
-
-    Student(int r)
-    {
-        this->roll = r;
-    }
-
-    // user defined copy construcor
 
     void show()
     {
-        cout << "STUDENT NAME: " << name << endl;
-        cout << "CGPA: " << *cgpa << endl;
+        cout << "STUDNET NAME: " << name << endl;
+        cout << "STUDENT CGPA: " << cgpa << endl;
     }
 
-    void show2()
+    void updateCgpa(float c)
     {
-        cout << "ROLL: " << roll << endl;
+        cgpa = c;
     }
 };
 
 int main()
 {
-    // Student s("Aftab", 9.8);
-    // s.show();
-    // Student s2(s);
-    // *s2.cgpa = 5.5;
+
+    //  Student s1("Ali", 9.3);
+    //  Student s2(s1);
+
+    float y = 6;
+    float *x = &y;
+    // Student s1("Ali", &x);
+
+    // s1.show();
+    // cout << endl;
     // s2.show();
 
-    // Student r(8);
-    // r.show2();
-    // r.roll = 10;
-    // r.show2();
-    // Student r2(r);
-    // r2.show2();
-    // r.show2();
-    // r.roll = 90;
-    // r2.show2();
-    // r.show2(); 
+    // s2.updateCgpa(5);
+    // s2.show();
+    // s1.show();
     return 0;
 }

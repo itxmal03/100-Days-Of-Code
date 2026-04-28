@@ -1,0 +1,6 @@
+Programming 2000 2000  1000 9000 Ahmad 500
+Discrete    3500 5100  3000 1000 faraz 300
+Calculus    6000 12000 1000 2000 Ali   515
+Algebra     3000 600   1000 7000 sofia 300 
+Automata    4000 130   3500 3700 Saba  250
+Linear      5000 3000  170 2600  Haider 134
