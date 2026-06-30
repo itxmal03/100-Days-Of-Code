@@ -18,7 +18,7 @@ private:
     float marks;
 
 public:
-    string name;
+    string studentName;
     // non parameterized or default conrstructor automatically called on creation of object , can also be used to give default values
     Student()
     {

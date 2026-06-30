@@ -4,7 +4,7 @@ using namespace std;
 class Student
 {
 private:
-    string name;
+    string studentName;
     float cgpa;
 
     float *pointerCgpa;
@@ -18,13 +18,13 @@ public:
 
     Student(string n, float &c)
     {
-        this->name = n;
+        this->studentName = n;
         *pointerCgpa = c;
     }
 
     void show()
     {
-        cout << "STUDNET NAME: " << name << endl;
+        cout << "STUDNET NAME: " << studentName << endl;
         cout << "STUDENT CGPA: " << cgpa << endl;
     }
 

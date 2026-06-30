@@ -4,13 +4,12 @@ using namespace std;
 class Student
 {
 private:
-    string name;
+    string studentName;
     int roll;
     static int totalStudent;
     const double salary = 100000;
 
 public:
-
     Student()
     {
         totalStudent++;
@@ -25,13 +24,13 @@ public:
 
     void setData(string n, int r)
     {
-        name = n;
+        studentName = n;
         roll = r;
     }
 
     void setName(string n)
     {
-        name = n;
+        studentName = n;
     }
 
     void setRoll(int r)
@@ -41,7 +40,7 @@ public:
 
     string getName()
     {
-        return name;
+        return studentName;
     }
 
     int getRoll()
