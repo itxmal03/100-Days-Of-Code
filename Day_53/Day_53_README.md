@@ -3,6 +3,7 @@
 **Language:** C++ (primary) + Dart (translation)  
 **Topic:** Array subarray generation & maximum sum optimization
 
+**Kotlin setup** Print hello world in kotlin 
 ---
 
 ## Implemented Functions
