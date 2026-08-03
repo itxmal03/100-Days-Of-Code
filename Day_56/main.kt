@@ -9,4 +9,21 @@ fun main() {
     println("Name is $name")
     println("Name is $age")
     println("Next year I will be ${age + 1}")
+
+    var a: Int = 89
+    var b: Int = 9
+
+    println("${a>b}")
+    println("${a<b}")
+    println("${a>=b}")
+    println("${a<=b}")
+    println("${a==b}")
+    println("${a!=b}")
+
+    println("${a+b}")
+    println("${a-b}")
+    println("${a/b}")
+    println("${a%b}")
+    println("${a*b}")
+  
 }

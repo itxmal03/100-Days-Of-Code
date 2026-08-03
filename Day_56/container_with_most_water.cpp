@@ -11,7 +11,6 @@ int method1(int *arr, int n)
             int w = j - i;
             int h = min(arr[j], arr[i]);
             int currentWater = w * h;
-
             mostWater = max(currentWater, mostWater);
         }
     }
