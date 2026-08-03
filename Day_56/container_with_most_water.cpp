@@ -20,9 +20,9 @@ int method1(int *arr, int n)
 
 int main()
 {
-    int array[5] = {1, 3, 6, 8, 5};
+    int array[6] = {1, 3, 6, 8, 5,7};
 
-    cout << "Most water is : " << method1(array, 5) << endl;
+    cout << "Most water is : " << method1(array, 6) << endl;
 
     return 0;
 }
