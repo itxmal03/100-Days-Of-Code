@@ -17,11 +17,30 @@ int method1(int *arr, int n)
     return mostWater;
 }
 
+//--- optimized solution
+int method2(int *arr, int n)
+{
+    int mostWater = 0;
+    int lp = 0, rp = n - 1;
+    while (lp < rp)
+    {
+        int w = rp - lp;
+        int h = min(arr[lp], arr[rp]);
+        int currentWater = w * h;
+        mostWater = max(currentWater, mostWater);
+
+        arr[lp] < arr[rp] ? lp++ : rp--;
+    }
+    return mostWater;
+}
+
 int main()
 {
-    int array[6] = {1, 3, 6, 8, 5,7};
+    int array[6] = {1, 3, 6, 8, 5, 7};
 
-    cout << "Most water is : " << method1(array, 6) << endl;
+    cout << "Most water is by brute force : " << method1(array, 6) << endl;
+
+    cout << "Most water is by optimized appr : " << method2(array, 6) << endl;
 
     return 0;
 }
