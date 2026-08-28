@@ -30,7 +30,7 @@ fun main() {
 }
 
 // fun isPalin(): Boolean {
-//     return it.lowercase == it.lowercase.reversed()
+//     return it.lowercase == it.lowercase.reversed()  // it will not work
 // }
 
 fun isPalind(str: String): Boolean {
