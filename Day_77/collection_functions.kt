@@ -9,7 +9,7 @@ fun main() {
     var palindromeStrings2 =
             list.filter(
                     fun(str: String): Boolean {
-                        return str.toLowerCase() == str.toLowerCase().reversed()
+                        return str.lowercase() == str.lowercase().reversed()
                     }
             )
 
@@ -20,7 +20,7 @@ fun main() {
 
     // all above has same effect
 
-    var upperCase = list.map { it.toUpperCase() }
+    var upperCase = list.map { it.uppercase() }
 
     println(upperCase)
 
@@ -34,5 +34,5 @@ fun main() {
 // }
 
 fun isPalind(str: String): Boolean {
-    return str.toLowerCase() == str.toLowerCase().reversed()
+    return str.lowercase() == str.lowercase().reversed()
 }
