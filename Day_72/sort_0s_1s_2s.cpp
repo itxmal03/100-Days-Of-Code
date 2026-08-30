@@ -37,6 +37,29 @@ void _sort(int arr[], int n)
     }
 }
 
+void dutchNationalFlagAlgo(int arr[], int n)
+{
+    int low = 0, mid = 0, high = n - 1;
+
+    while (mid <= high)
+    {
+        if (arr[mid] == 0)
+        {
+            swap(arr[mid], arr[low]);
+            mid++, low++;
+        }
+        else if (arr[mid] == 1)
+        {
+            mid++;
+        }
+        else
+        {
+            swap(arr[mid], arr[high]);
+            high--;
+        }
+    }
+}
+
 void printArr(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
@@ -52,7 +75,8 @@ int main()
     int arr[5] = {2, 1, 0, 0, 2};
     int n = 5;
     printArr(arr, n);
-    _sort(arr, n);
+    // _sort(arr, n);
+    dutchNationalFlagAlgo(arr, n);
     printArr(arr, n);
 
     return 0;
