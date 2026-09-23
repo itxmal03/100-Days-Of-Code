@@ -4,7 +4,11 @@ using namespace std;
 int main()
 {
 
-    // int x = 990;
+    int r;
+
+    cout << "enter any number" << endl;
+
+    cin >> r;
 
     int *y = new int;
 
@@ -16,7 +20,6 @@ int main()
     int x = 89;
 
     int *array = new int[x];
-    
 
     return 0;
 }
