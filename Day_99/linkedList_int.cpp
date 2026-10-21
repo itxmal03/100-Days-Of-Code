@@ -251,7 +251,6 @@ public:
 
     void sort()
     {
-        
     }
 
     void clear()
@@ -267,6 +266,8 @@ public:
             cout << "temp is pointed to next address: " << nextNode << endl;
             temp = nextNode;
         }
+        this->head = nullptr;
+        this->size = 0;
     }
 };
 
